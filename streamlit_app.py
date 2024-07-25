@@ -6,6 +6,13 @@ import plotly.express as px
 import datetime as datetime
 import altair as alt
 
+st.header('st.latex')
+
+st.latex(r'''
+     a + ar + a r^2 + a r^3 + \cdots + a r^{n-1} =
+     \sum_{k=0}^{n-1} ar^k =
+     a \left(\frac{1-r^{n}}{1-r}\right)
+     ''')
 
 #load data
 df_agg = pd.read_csv('Aggregated_Metrics_By_Video.csv').iloc[1:,:]

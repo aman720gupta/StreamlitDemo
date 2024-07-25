@@ -3,3 +3,4 @@ panda
 numpy
 plotly
 altair
+streamlit_pandas_profiling
